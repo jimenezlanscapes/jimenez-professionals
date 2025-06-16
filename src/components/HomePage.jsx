@@ -1,0 +1,129 @@
+
+import React from "react";
+
+export default function HomePage() {
+  return (
+    <div className="bg-[#0e0e2c] min-h-screen text-white font-sans">
+      <header className="flex justify-between items-center px-8 py-6">
+        <div className="flex items-center space-x-2">
+          <span className="text-xl font-bold">Jimenez Landscaping, LLC</span>
+        </div>
+        <nav className="flex space-x-6 text-sm font-semibold">
+          <a href="#home" className="hover:text-green-400">Home</a>
+          <a href="#services" className="hover:text-green-400">Services</a>
+          <a href="#login" className="hover:text-green-400">Client Login</a>
+          <button className="bg-yellow-400 text-black px-4 py-1 rounded hover:bg-yellow-300">Sign Up</button>
+        </nav>
+      </header>
+
+      <main className="text-center px-6 mt-16">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+          Landscaping Excellence in The Villages, FL
+        </h1>
+        <p className="text-lg text-gray-300 mb-8">
+          Transforming your outdoor spaces with precision, professionalism, and passion.
+        </p>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded font-semibold text-lg">
+          Get a Free Quote
+        </button>
+      </main>
+
+      
+
+<section id="services" className="mt-20 px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-24">
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🌱</div>
+    <h3 className="text-xl font-bold mb-2">Sod Installation & Replacement</h3>
+    <p className="text-sm text-gray-300">Lush, green lawns installed and maintained with care.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🪨</div>
+    <h3 className="text-xl font-bold mb-2">Mulch & Rock Bed Installation</h3>
+    <p className="text-sm text-gray-300">Beautify beds with durable, decorative materials.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">✂️</div>
+    <h3 className="text-xl font-bold mb-2">Shrub Trimming & Pruning</h3>
+    <p className="text-sm text-gray-300">Healthy growth and polished aesthetics guaranteed.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🌳</div>
+    <h3 className="text-xl font-bold mb-2">Tree Trimming & Canopy Lifting</h3>
+    <p className="text-sm text-gray-300">Safe, professional trimming to enhance your yard.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🚫</div>
+    <h3 className="text-xl font-bold mb-2">Weed Control & Prevention</h3>
+    <p className="text-sm text-gray-300">Keep your landscape clean and weed-free year-round.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🌾</div>
+    <h3 className="text-xl font-bold mb-2">Seasonal Fertilization</h3>
+    <p className="text-sm text-gray-300">Boost plant health with expert nutrient application.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">💧</div>
+    <h3 className="text-xl font-bold mb-2">Irrigation System Setup & Repairs</h3>
+    <p className="text-sm text-gray-300">Smart watering systems installed and maintained.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🖼️</div>
+    <h3 className="text-xl font-bold mb-2">Landscape Design & 3D Planning</h3>
+    <p className="text-sm text-gray-300">Bring your dream yard to life with stunning visuals.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🧹</div>
+    <h3 className="text-xl font-bold mb-2">Yard Cleanups (Spring/Fall/Storm)</h3>
+    <p className="text-sm text-gray-300">Get your property back in shape fast.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🧱</div>
+    <h3 className="text-xl font-bold mb-2">Decorative Curbing & Concrete Borders</h3>
+    <p className="text-sm text-gray-300">Define your beds with style and durability.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">💡</div>
+    <h3 className="text-xl font-bold mb-2">Outdoor Lighting (Path, Accent, Uplighting)</h3>
+    <p className="text-sm text-gray-300">Enhance safety and ambiance with lighting design.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🌴</div>
+    <h3 className="text-xl font-bold mb-2">Palm Tree Installation & Maintenance</h3>
+    <p className="text-sm text-gray-300">Tropical beauty with expert palm care.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🪨</div>
+    <h3 className="text-xl font-bold mb-2">Boulder & Feature Rock Placement</h3>
+    <p className="text-sm text-gray-300">Natural accents that stand the test of time.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🏟️</div>
+    <h3 className="text-xl font-bold mb-2">Artificial Turf Installation</h3>
+    <p className="text-sm text-gray-300">Low-maintenance grass that looks great year-round.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🌷</div>
+    <h3 className="text-xl font-bold mb-2">Custom Garden Bed Builds</h3>
+    <p className="text-sm text-gray-300">Unique designs tailored to your home and taste.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🛻</div>
+    <h3 className="text-xl font-bold mb-2">Gravel & Shell Driveway Upgrades</h3>
+    <p className="text-sm text-gray-300">Classic Florida style driveways built to last.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🪒</div>
+    <h3 className="text-xl font-bold mb-2">Landscape Bed Re-Shaping & Re-Edging</h3>
+    <p className="text-sm text-gray-300">Clean lines and professional touch-ups.</p>
+  </div>
+  <div className="bg-[#1e1e3f] p-6 rounded-lg text-center shadow">
+    <div className="text-4xl mb-3">🌺</div>
+    <h3 className="text-xl font-bold mb-2">Color Rotation Programs (Seasonal Flower Installs)</h3>
+    <p className="text-sm text-gray-300">Fresh curb appeal with vibrant, seasonal blooms.</p>
+  </div>
+</section>
+
+
+    </div>
+  );
+}
