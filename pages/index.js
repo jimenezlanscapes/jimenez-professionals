@@ -1,1 +1,0 @@
-// Homepage entry point

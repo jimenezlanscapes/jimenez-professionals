@@ -1,1 +1,0 @@
-Add images for the Palm service here.
