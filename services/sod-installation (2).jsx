@@ -1,10 +1,8 @@
-
 import React from "react";
 
 export default function SodInstallation() {
   const images = [
-    "/assets/sod1.jpg",
-    "/assets/sod2.jpg"
+    
   ];
   const title = "Sod Installation";
 
@@ -28,8 +26,8 @@ export default function SodInstallation() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
           {images.map((src, idx) => (
-            <img key={idx} src={src} alt={`${title} ${idx + 1}`} className="rounded-lg shadow-md" />
-          ))}
+                      <img key={idx} src={src} alt={`${title} ${idx + 1}`} className="rounded-lg shadow-md" />
+                    ))}
         </div>
 
         <div className="text-center">
