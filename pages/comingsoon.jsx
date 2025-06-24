@@ -37,7 +37,7 @@ export default function ComingSoon() {
             </ul>
           </div>
         </div>
-        <div className="text-center mt-4 text-gray-400">&copy; {{new Date().getFullYear()}} Jimenez Landscaping, LLC</div>
+        <div className="text-center mt-4 text-gray-400">&copy; {new Date().getFullYear()} Jimenez Landscaping, LLC</div>
       </footer>
     </div>
   );
