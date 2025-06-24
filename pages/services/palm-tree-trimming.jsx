@@ -1,43 +1,41 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
 
-export default function PalmTreeTrimming() {{
+export default function PalmtreetrimmingPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#f0f8f0] text-[#3e4c35] font-sans">
-      <header className="flex justify-between items-center px-8 py-6 bg-[#4e7938] text-white shadow">
-        <div className="text-xl font-bold">Jimenez Landscaping, LLC</div>
+    <div className="bg-[#f0f8f0] min-h-screen text-[#3e4c35] font-sans">
+      <header className="flex justify-between items-center px-8 py-6">
+        <div className="flex items-center space-x-2">
+          <span className="text-xl font-bold text-[#4e7938]">Jimenez Landscaping, LLC</span>
+        </div>
         <nav className="flex space-x-6 text-sm font-semibold">
-          <Link href="/"><span className="hover:underline cursor-pointer">Home</span></Link>
-          <Link href="/#services"><span className="hover:underline cursor-pointer">Services</span></Link>
-          <Link href="/contact"><span className="hover:underline cursor-pointer">Contact</span></Link>
+          <a href="/" className="text-[#4e7938] hover:text-[#76a05b]">Home</a>
+          <a href="/#services" className="text-[#4e7938] hover:text-[#76a05b]">Services</a>
+          <a href="/login" className="text-[#4e7938] hover:text-[#76a05b]">Client Login</a>
         </nav>
       </header>
 
-      <main className="flex-grow px-6 py-12 max-w-4xl mx-auto w-full">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#4e7938] mb-6">🌴 Palm & Tree Trimming</h1>
-        <div className="text-lg leading-relaxed mb-6">
-Keep your palms and trees healthy, safe, and beautiful with professional trimming and canopy lifting.
-
-Benefits:
-<ul class='list-disc list-inside mb-6 space-y-2'>
-  <li>Improved light penetration and air flow</li>
-  <li>Removal of dead fronds and safety hazards</li>
-  <li>Palm skinning and shaping for aesthetic value</li>
-  <li>Storm preparation and cleanup available</li>
-</ul>
-</div>
-        <Link href="/quote">
-          <span className="inline-block bg-[#4e7938] hover:bg-[#76a05b] text-white px-6 py-3 rounded font-semibold text-lg cursor-pointer">
-            Get a Custom Quote
-          </span>
-        </Link>
+      <main className="px-8 py-12">
+        <h1 className="text-3xl font-bold text-[#4e7938] mb-6">Palm Tree Trimming</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="/assets/palm-tree-trimming/FB_IMG_1750192454630.jpg" alt="FB_IMG_1750192454630" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/IMG_20250414_134929882.jpg" alt="IMG_20250414_134929882" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/IMG_20250414_154619958.jpg" alt="IMG_20250414_154619958" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/IMG_20250508_141725197.jpg" alt="IMG_20250508_141725197" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/IMG_20250613_150301.jpg" alt="IMG_20250613_150301" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/Screenshot_20250513-130026.png" alt="Screenshot_20250513-130026" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/Screenshot_20250513-131359.png" alt="Screenshot_20250513-131359" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/Screenshot_20250612-193522.png" alt="Screenshot_20250612-193522" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/Screenshot_20250612-193559.png" alt="Screenshot_20250612-193559" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/Screenshot_20250612-193605.png" alt="Screenshot_20250612-193605" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/Screenshot_20250613-122934.png" alt="Screenshot_20250613-122934" className="w-full rounded shadow mb-4" />
+            <img src="/assets/palm-tree-trimming/Screenshot_20250613-152230.png" alt="Screenshot_20250613-152230" className="w-full rounded shadow mb-4" />
+        </div>
       </main>
 
-      <footer className="bg-[#f0f8f0] text-center py-8 border-t border-[#8aa765]">
-        <p className="text-sm mb-2">Scan the QR code to access our client portal:</p>
-        <Image src="/assets/qr-code.png" alt="QR Code" width={96} height={96} className="mx-auto" />
+      <footer className="bg-[#f0f8f0] text-[#4e7938] text-center py-8 border-t border-[#8aa765] mt-10">
+        <p className="mb-4 text-sm">Scan the QR code to access our client portal:</p>
+        <img src="/assets/qr-code.png" alt="Client Portal QR Code" className="mx-auto w-24 h-24 object-contain" />
       </footer>
     </div>
   );
-}}
+}

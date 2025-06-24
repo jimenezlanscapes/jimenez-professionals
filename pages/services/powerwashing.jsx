@@ -1,43 +1,35 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
 
-export default function Powerwashing() {{
+export default function PowerwashingPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#f0f8f0] text-[#3e4c35] font-sans">
-      <header className="flex justify-between items-center px-8 py-6 bg-[#4e7938] text-white shadow">
-        <div className="text-xl font-bold">Jimenez Landscaping, LLC</div>
+    <div className="bg-[#f0f8f0] min-h-screen text-[#3e4c35] font-sans">
+      <header className="flex justify-between items-center px-8 py-6">
+        <div className="flex items-center space-x-2">
+          <span className="text-xl font-bold text-[#4e7938]">Jimenez Landscaping, LLC</span>
+        </div>
         <nav className="flex space-x-6 text-sm font-semibold">
-          <Link href="/"><span className="hover:underline cursor-pointer">Home</span></Link>
-          <Link href="/#services"><span className="hover:underline cursor-pointer">Services</span></Link>
-          <Link href="/contact"><span className="hover:underline cursor-pointer">Contact</span></Link>
+          <a href="/" className="text-[#4e7938] hover:text-[#76a05b]">Home</a>
+          <a href="/#services" className="text-[#4e7938] hover:text-[#76a05b]">Services</a>
+          <a href="/login" className="text-[#4e7938] hover:text-[#76a05b]">Client Login</a>
         </nav>
       </header>
 
-      <main className="flex-grow px-6 py-12 max-w-4xl mx-auto w-full">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#4e7938] mb-6">🧼 Soft & Hard Powerwash</h1>
-        <div className="text-lg leading-relaxed mb-6">
-Restore the shine to your exterior surfaces with our soft and hard powerwashing services.
-
-We clean:
-<ul class='list-disc list-inside mb-6 space-y-2'>
-  <li>Driveways, sidewalks, and patios</li>
-  <li>Home siding, fences, and screen enclosures</li>
-  <li>Delicate surfaces with low-pressure soft wash</li>
-  <li>Mildew, algae, grime, and buildup removal</li>
-</ul>
-</div>
-        <Link href="/quote">
-          <span className="inline-block bg-[#4e7938] hover:bg-[#76a05b] text-white px-6 py-3 rounded font-semibold text-lg cursor-pointer">
-            Get a Custom Quote
-          </span>
-        </Link>
+      <main className="px-8 py-12">
+        <h1 className="text-3xl font-bold text-[#4e7938] mb-6">Powerwashing</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="/assets/powerwashing/Screenshot_20250613-152036.png" alt="Screenshot_20250613-152036" className="w-full rounded shadow mb-4" />
+            <img src="/assets/powerwashing/Screenshot_20250613-152055.png" alt="Screenshot_20250613-152055" className="w-full rounded shadow mb-4" />
+            <img src="/assets/powerwashing/Screenshot_20250613-152611.png" alt="Screenshot_20250613-152611" className="w-full rounded shadow mb-4" />
+            <img src="/assets/powerwashing/Screenshot_20250613-153655.png" alt="Screenshot_20250613-153655" className="w-full rounded shadow mb-4" />
+            <img src="/assets/powerwashing/Screenshot_20250613-153724.png" alt="Screenshot_20250613-153724" className="w-full rounded shadow mb-4" />
+            <img src="/assets/powerwashing/Screenshot_20250613-154441.png" alt="Screenshot_20250613-154441" className="w-full rounded shadow mb-4" />
+        </div>
       </main>
 
-      <footer className="bg-[#f0f8f0] text-center py-8 border-t border-[#8aa765]">
-        <p className="text-sm mb-2">Scan the QR code to access our client portal:</p>
-        <Image src="/assets/qr-code.png" alt="QR Code" width={96} height={96} className="mx-auto" />
+      <footer className="bg-[#f0f8f0] text-[#4e7938] text-center py-8 border-t border-[#8aa765] mt-10">
+        <p className="mb-4 text-sm">Scan the QR code to access our client portal:</p>
+        <img src="/assets/qr-code.png" alt="Client Portal QR Code" className="mx-auto w-24 h-24 object-contain" />
       </footer>
     </div>
   );
-}}
+}

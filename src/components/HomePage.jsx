@@ -42,56 +42,56 @@ export default function HomePage() {
           <p className="text-lg text-white mb-8 drop-shadow-md">
             Transforming your outdoor spaces with precision, professionalism, and passion.
           </p>
-          <a href="quote.html" className="bg-[#4e7938] hover:bg-[#76a05b] text-white px-6 py-3 rounded font-semibold text-lg inline-block">
+          <a href="/quote" className="bg-[#4e7938] hover:bg-[#76a05b] text-white px-6 py-3 rounded font-semibold text-lg inline-block">
             Get a Free Quote
           </a>
         </div>
       </main>
 
       <section id="services" className="mt-20 px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-24">
-        <a href="/services/quarterly-maintenance.html">
+        <a href="/services/quarterly-maintenance">
           <div className="bg-[#cde7c5] p-6 rounded-lg text-center shadow">
             <div className="text-4xl mb-3">📅</div>
             <h3 className="text-xl font-bold mb-2 text-[#4e7938]">Quarterly Maintenance</h3>
             <p className="text-sm text-[#3e4c35]">Scheduled service to keep your landscape in pristine condition all year long.</p>
           </div>
         </a>
-        <a href="/services/stonewall-installation.html">
+        <a href="/services/stonewall-installation">
           <div className="bg-[#cde7c5] p-6 rounded-lg text-center shadow">
             <div className="text-4xl mb-3">🧱</div>
             <h3 className="text-xl font-bold mb-2 text-[#4e7938]">Stonewall Installation & Repair</h3>
             <p className="text-sm text-[#3e4c35]">Durable, beautiful stone features that frame your property with style.</p>
           </div>
         </a>
-        <a href="/services/rock-mulch-refresh.html">
+        <a href="/services/rock-mulch-refresh">
           <div className="bg-[#cde7c5] p-6 rounded-lg text-center shadow">
             <div className="text-4xl mb-3">🪨</div>
             <h3 className="text-xl font-bold mb-2 text-[#4e7938]">Rock & Mulch Refresh</h3>
             <p className="text-sm text-[#3e4c35]">Fresh materials for a polished, clean, and vivid landscape bed.</p>
           </div>
         </a>
-        <a href="/services/planting-removal.html">
+        <a href="/services/planting-removal">
           <div className="bg-[#cde7c5] p-6 rounded-lg text-center shadow">
             <div className="text-4xl mb-3">🌺</div>
             <h3 className="text-xl font-bold mb-2 text-[#4e7938]">Planting & Removal</h3>
             <p className="text-sm text-[#3e4c35]">Expert planting and careful removal for optimal landscape balance.</p>
           </div>
         </a>
-        <a href="/services/sod-installation.html">
+        <a href="/services/sod-installation">
           <div className="bg-[#cde7c5] p-6 rounded-lg text-center shadow">
             <div className="text-4xl mb-3">🌱</div>
             <h3 className="text-xl font-bold mb-2 text-[#4e7938]">Sod Installation</h3>
             <p className="text-sm text-[#3e4c35]">Instant lawns laid with care and lasting quality.</p>
           </div>
         </a>
-        <a href="/services/palm-tree-trimming.html">
+        <a href="/services/palm-tree-trimming">
           <div className="bg-[#cde7c5] p-6 rounded-lg text-center shadow">
             <div className="text-4xl mb-3">🌴</div>
             <h3 className="text-xl font-bold mb-2 text-[#4e7938]">Palm & Tree Trimming</h3>
             <p className="text-sm text-[#3e4c35]">Shaping and maintaining palms and trees with expert care.</p>
           </div>
         </a>
-        <a href="/services/powerwashing.html">
+        <a href="/services/powerwashing">
           <div className="bg-[#cde7c5] p-6 rounded-lg text-center shadow">
             <div className="text-4xl mb-3">🧼</div>
             <h3 className="text-xl font-bold mb-2 text-[#4e7938]">Soft & Hard Powerwash</h3>

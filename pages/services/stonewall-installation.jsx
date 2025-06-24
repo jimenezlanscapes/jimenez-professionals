@@ -1,43 +1,34 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
 
-export default function StonewallInstallation() {{
+export default function StonewallinstallationPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#f0f8f0] text-[#3e4c35] font-sans">
-      <header className="flex justify-between items-center px-8 py-6 bg-[#4e7938] text-white shadow">
-        <div className="text-xl font-bold">Jimenez Landscaping, LLC</div>
+    <div className="bg-[#f0f8f0] min-h-screen text-[#3e4c35] font-sans">
+      <header className="flex justify-between items-center px-8 py-6">
+        <div className="flex items-center space-x-2">
+          <span className="text-xl font-bold text-[#4e7938]">Jimenez Landscaping, LLC</span>
+        </div>
         <nav className="flex space-x-6 text-sm font-semibold">
-          <Link href="/"><span className="hover:underline cursor-pointer">Home</span></Link>
-          <Link href="/#services"><span className="hover:underline cursor-pointer">Services</span></Link>
-          <Link href="/contact"><span className="hover:underline cursor-pointer">Contact</span></Link>
+          <a href="/" className="text-[#4e7938] hover:text-[#76a05b]">Home</a>
+          <a href="/#services" className="text-[#4e7938] hover:text-[#76a05b]">Services</a>
+          <a href="/login" className="text-[#4e7938] hover:text-[#76a05b]">Client Login</a>
         </nav>
       </header>
 
-      <main className="flex-grow px-6 py-12 max-w-4xl mx-auto w-full">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#4e7938] mb-6">🧱 Stonewall Installation & Repair</h1>
-        <div className="text-lg leading-relaxed mb-6">
-Add structure and elegance to your landscape with professionally installed stonewalls. Whether you're enhancing garden borders or preventing soil erosion, our stonework is both functional and beautiful.
-
-Our services include:
-<ul class='list-disc list-inside mb-6 space-y-2'>
-  <li>Custom-designed retaining walls and decorative stone features</li>
-  <li>Repair and restoration of existing stone structures</li>
-  <li>Use of high-quality materials for lasting durability</li>
-  <li>Clean finishing for a polished look</li>
-</ul>
-</div>
-        <Link href="/quote">
-          <span className="inline-block bg-[#4e7938] hover:bg-[#76a05b] text-white px-6 py-3 rounded font-semibold text-lg cursor-pointer">
-            Get a Custom Quote
-          </span>
-        </Link>
+      <main className="px-8 py-12">
+        <h1 className="text-3xl font-bold text-[#4e7938] mb-6">Stonewall Installation</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src="/assets/stonewall-installation/IMG_20250616_133509.jpg" alt="IMG_20250616_133509" className="w-full rounded shadow mb-4" />
+            <img src="/assets/stonewall-installation/IMG_20250616_133546.jpg" alt="IMG_20250616_133546" className="w-full rounded shadow mb-4" />
+            <img src="/assets/stonewall-installation/Screenshot_20250613-151852.png" alt="Screenshot_20250613-151852" className="w-full rounded shadow mb-4" />
+            <img src="/assets/stonewall-installation/Screenshot_20250613-151929.png" alt="Screenshot_20250613-151929" className="w-full rounded shadow mb-4" />
+            <img src="/assets/stonewall-installation/Screenshot_20250613-151943.png" alt="Screenshot_20250613-151943" className="w-full rounded shadow mb-4" />
+        </div>
       </main>
 
-      <footer className="bg-[#f0f8f0] text-center py-8 border-t border-[#8aa765]">
-        <p className="text-sm mb-2">Scan the QR code to access our client portal:</p>
-        <Image src="/assets/qr-code.png" alt="QR Code" width={96} height={96} className="mx-auto" />
+      <footer className="bg-[#f0f8f0] text-[#4e7938] text-center py-8 border-t border-[#8aa765] mt-10">
+        <p className="mb-4 text-sm">Scan the QR code to access our client portal:</p>
+        <img src="/assets/qr-code.png" alt="Client Portal QR Code" className="mx-auto w-24 h-24 object-contain" />
       </footer>
     </div>
   );
-}}
+}
